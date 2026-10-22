@@ -257,4 +257,4 @@ def parse_resume_file(file_data: bytes, filename:str)->Tuple[str, dict]:
         'text_length':     len(text),
         'success':         True,
     }
-    return text, metadata
+    return text, metadata   

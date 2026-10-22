@@ -1,10 +1,38 @@
 
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
-__pycache__/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+.streamlit/secrets/
+frontend/.streamlit/secrets.toml
+frontend/.streamlit/secrets/
+
+# Python virtual environments
 .venv/
 venv/
-.streamlit/secrets.toml
-frontend/.streamlit/secrets.toml
+env/
+
+# Python cache and test files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Logs
+*.log
 backend/logs/
+
+# IDE and operating system
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Datasets
+*.csv
+
+# Machine learning models
+*.safetensors
+*.pkl
